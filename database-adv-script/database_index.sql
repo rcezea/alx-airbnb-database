@@ -36,3 +36,7 @@ CREATE INDEX idx_message_recipient_id ON Message(recipient_id);
 -- Composite index for paginated inboxes
 CREATE INDEX idx_message_recipient_id_msg_id ON Message(recipient_id, message_id);
 CREATE INDEX idx_message_sender_id_msg_id ON Message(sender_id, message_id);
+
+-- Measure the query performance
+EXPLAIN SELECT * FROM User;
+ANALYZE SELECT * FROM User;

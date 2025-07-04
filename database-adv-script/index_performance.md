@@ -27,5 +27,5 @@
 * payment_id
 
 
-## Query performance 
+## Query performance
 There was so significant improvement due to limited data entries.
