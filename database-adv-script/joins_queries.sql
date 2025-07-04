@@ -7,7 +7,7 @@ SELECT * FROM BOOKINGS LEFT JOIN USERS ON BOOKINGS.user_id=USERS.user_id;
 -- all properties and their reviews, including
 -- properties that have no reviews.
 
-SELECT * FROM BOOKINGS RIGHT JOIN USERS ON PROPERTY.review_id=REVIEW.user_id
+SELECT * FROM PROPERTY RIGHT JOIN USERS ON PROPERTY.review_id=REVIEW.user_id
 ORDER BY PROPERTY.review_id;
 
 -- Write a query using a FULL OUTER JOIN to retrieve
