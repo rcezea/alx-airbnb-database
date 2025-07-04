@@ -13,7 +13,7 @@ HAVING COUNT(B.booking_id) >= 3;
 -- of bookings they have received.
 
 SELECT name, booking_count,
-    RANK() OVER (ORDER BY booking_count) AS booking_rank
+    ROW_NUMBER() OVER (ORDER BY booking_count) AS booking_rank
 FROM (
     SELECT
         P.name,
